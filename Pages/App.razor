@@ -1,0 +1,17 @@
+<!--
+    Archivo App.razor:
+    Define el enrutamiento de la aplicación.
+    Según la ruta actual, se renderiza el contenido correspondiente.
+-->
+<Router AppAssembly="@typeof(Program).Assembly">
+    <Found Context="ruta">
+        <!-- RouteView renderiza la página actual usando el layout por defecto (MainLayout) -->
+        <RouteView RouteData="@ruta" DefaultLayout="@typeof(TareasBlazor.Shared.MainLayout)" />
+    </Found>
+    <NotFound>
+        <!-- Si la ruta no existe, se muestra un mensaje en el layout -->
+        <LayoutView Layout="@typeof(TareasBlazor.Shared.MainLayout)">
+            <p>La página solicitada no fue encontrada.</p>
+        </LayoutView>
+    </NotFound>
+</Router>

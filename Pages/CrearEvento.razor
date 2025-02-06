@@ -1,0 +1,59 @@
+@page "/crear-evento"
+@using TareasBlazor.Modelos
+@inject TareasBlazor.Servicios.EventosService ServicioEventos
+@inject NavigationManager NavigationManager
+<!--
+    Archivo CrearEvento.razor:
+    Permite a los usuarios dar de alta un nuevo evento.
+    El formulario incluye campos para nombre, fecha, ubicación y una descripción larga.
+-->
+<h1>Alta de Evento</h1>
+
+<EditForm Model="@evento" OnValidSubmit="RegistrarEvento">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <!-- Campo para el nombre del evento -->
+    <div class="form-group">
+        <label>Nombre del Evento:</label>
+        <InputText @bind-Value="evento.Nombre" class="form-control" />
+    </div>
+    <!-- Campo para la fecha (con validación en el modelo) -->
+    <div class="form-group">
+        <label>Fecha:</label>
+        <InputDate @bind-Value="evento.Fecha" class="form-control" />
+    </div>
+    <!-- Campo para la ubicación del evento -->
+    <div class="form-group">
+        <label>Ubicación:</label>
+        <InputText @bind-Value="evento.Ubicacion" class="form-control" />
+    </div>
+    <!-- Campo para la descripción larga del evento -->
+    <div class="form-group">
+        <label>Descripción:</label>
+        <InputTextArea @bind-Value="evento.Descripcion" class="form-control" />
+    </div>
+    <button type="submit" class="btn">Registrar Evento</button>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(mensaje))
+{
+    <p>@mensaje</p>
+}
+
+@code {
+    // Modelo de evento a registrar, con la fecha por defecto en el día actual.
+    private Evento evento = new Evento { Fecha = DateTime.Now };
+    // Mensaje de confirmación o error.
+    private string mensaje = "";
+
+    // Método que se ejecuta al enviar el formulario.
+    private void RegistrarEvento()
+    {
+        // Se agrega el evento al servicio (almacenado en memoria).
+        ServicioEventos.AgregarEvento(evento);
+        mensaje = "Evento registrado exitosamente.";
+        // Redirige a la página de lista de eventos.
+        NavigationManager.NavigateTo("/");
+    }
+}

@@ -1,0 +1,25 @@
+@page "/"
+@namespace TareasBlazor.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!--
+    Archivo _Host.cshtml:
+    Esta es la página host principal de la aplicación Blazor Server.
+    Se utiliza para cargar el componente App y definir el layout base.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TareasBlazor - La Mejor Página Cerda del Mundo</title>
+    <base href="~/" />
+    <!-- Se incluye la hoja de estilos principal -->
+    <link href="css/cyber.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- El componente App se renderiza aquí (modo ServerPrerendered) -->
+    <component type="typeof(App)" render-mode="ServerPrerendered" />
+    <!-- Script de Blazor para la comunicación en tiempo real -->
+    <script src="_framework/blazor.server.js"></script>
+</body>
+</html>

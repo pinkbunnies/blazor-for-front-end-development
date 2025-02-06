@@ -1,0 +1,38 @@
+@page "/detalles/{EventoId:int}"
+@using TareasBlazor.Modelos
+@inject TareasBlazor.Servicios.EventosService ServicioEventos
+<!--
+    Archivo DetallesEvento.razor:
+    Muestra los detalles de un evento, incluyendo su descripción.
+    Se utiliza el parámetro de la URL para identificar el evento a mostrar.
+-->
+<h1>Detalles del Evento</h1>
+
+@if (EventoSeleccionado == null)
+{
+    <p>Evento no encontrado.</p>
+}
+else
+{
+    <div class="detalles-evento">
+        <h3>@EventoSeleccionado.Nombre</h3>
+        <p><strong>Fecha:</strong> @EventoSeleccionado.Fecha.ToString("dd/MM/yyyy")</p>
+        <p><strong>Ubicación:</strong> @EventoSeleccionado.Ubicacion</p>
+        <p><strong>Descripción:</strong> @EventoSeleccionado.Descripcion</p>
+    </div>
+}
+
+@code {
+    // Parámetro recibido por la URL: ID del evento a mostrar
+    [Parameter]
+    public int EventoId { get; set; }
+
+    // Variable para almacenar el evento seleccionado
+    private Evento? EventoSeleccionado;
+
+    // En la inicialización, se busca el evento por su ID en el servicio
+    protected override void OnInitialized()
+    {
+        EventoSeleccionado = ServicioEventos.ObtenerEventos().FirstOrDefault(e => e.Id == EventoId);
+    }
+}

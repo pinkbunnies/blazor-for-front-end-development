@@ -1,0 +1,207 @@
+/* 
+    Archivo cyber.css:
+    Define la estética "cerdita" con efectos 3D, sombras, relieves y degradados.
+*/
+
+/* Importar la fuente moderna Lato desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* Variables CSS para mantener una paleta coherente */
+:root {
+    --fondo: #ffe4e1;         /* Rosa palo: color de fondo */
+    --texto: #a0522d;         /* Color carne: para textos y detalles */
+    /* Fondo del menú y footer con degradados para efecto moderno */
+    --menu-fondo: linear-gradient(135deg, #ffccd5, #ffc0cb);
+    --menu-texto: #a0522d;
+    --boton-fondo: linear-gradient(135deg, #ffb6c1, #ff69b4);
+    --boton-hover: #ff69b4;
+    --input-borde: #a0522d;
+    --input-focus: #ff69b4;
+    --header-bg: linear-gradient(135deg, #ffb6c1, #ff69b4);
+    --footer-bg: linear-gradient(135deg, #ffccd5, #ffc0cb);
+    /* Sombra 3D para efectos de relieve */
+    --shadow: 0 4px 8px rgba(160, 82, 45, 0.4);
+}
+
+/* Contenedor principal: centra la página y limita el ancho máximo */
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Header: sección superior con degradado, sombra y relieve 3D */
+.header {
+    background: var(--header-bg);
+    display: flex;
+    flex-direction: column; /* El título y el menú se apilan verticalmente */
+    align-items: center;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border-bottom: 3px solid var(--texto);
+}
+
+/* Título del header con efecto 3D y sombra de texto */
+.header-title h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: var(--texto);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+/* Menú horizontal integrado en el header */
+.nav-horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.nav-horizontal ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-horizontal li {
+    margin-right: 30px;
+}
+
+.nav-horizontal li:last-child {
+    margin-right: 0;
+}
+
+.nav-horizontal li a {
+    text-decoration: none;
+    color: var(--menu-texto);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-horizontal li a:hover {
+    color: var(--boton-hover);
+    transform: translateY(-3px);
+}
+
+.nav-horizontal li a .icono {
+    margin-right: 8px;
+    font-size: 1.4em;
+}
+
+/* Contenedor central para el contenido */
+.contenedor {
+    margin: 20px;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Área de contenido principal: fondo blanco, bordes redondeados y efecto 3D */
+.content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.content:hover {
+    transform: translateY(-2px);
+}
+
+/* Tarjetas de eventos: efecto 3D al pasar el ratón */
+.tarjeta-evento {
+    background-color: #fff;
+    border: 1px solid var(--texto);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.tarjeta-evento:hover {
+    box-shadow: 0 6px 12px rgba(160, 82, 45, 0.5);
+    transform: translateY(-3px);
+}
+
+/* Grid para la lista de eventos */
+.grid-eventos {
+  display: grid;
+  /* Crea columnas que se adaptan automáticamente con un ancho mínimo de 300px */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;         /* Espacio entre elementos del grid */
+  margin-top: 20px;  /* Separación superior */
+}
+
+
+/* Botones con efecto 3D y degradado rosita */
+.btn {
+  /* Degradado rosado para el fondo */
+  background: linear-gradient(145deg, #ffb6c1, #ff69b4);
+  color: var(--texto);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  /* Sombra para efecto 3D en estado normal */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  /* Transiciones suaves para transform y sombra */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  /* Al pasar el mouse, se eleva el botón para dar efecto 3D */
+  transform: translateY(-4px);
+  /* Se intensifica la sombra para resaltar la elevación */
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Estilos para formularios modernos */
+/* Cada grupo de control se separa con márgenes */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Etiquetas (labels) con buen espaciado y fuente en negrita */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Controles de formulario (inputs, textareas) con ancho máximo, padding y efecto de focus */
+.form-control {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    border: 1px solid var(--input-borde);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #fff;
+    color: var(--texto);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--input-focus);
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.6);
+}
+
+/* Footer: sección inferior con degradado, sombra superior y texto centrado */
+.footer {
+    background: var(--footer-bg);
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    color: var(--menu-texto);
+    box-shadow: 0 -4px 8px rgba(160, 82, 45, 0.4);
+}

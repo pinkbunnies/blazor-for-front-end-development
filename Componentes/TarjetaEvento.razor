@@ -1,0 +1,12 @@
+@using TareasBlazor.Modelos
+<div class="tarjeta-evento">
+    <h3>@Evento.Nombre</h3>
+    <p><strong>Fecha:</strong> @Evento.Fecha.ToString("dd/MM/yyyy")</p>
+    <p><strong>Ubicación:</strong> @Evento.Ubicacion</p>
+    <a href="/detalles/@Evento.Id" class="btn">Ver Detalles</a>
+</div>
+
+@code {
+    [Parameter]
+    public Evento Evento { get; set; } = new Evento();
+}

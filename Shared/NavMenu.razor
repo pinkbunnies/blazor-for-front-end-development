@@ -1,0 +1,30 @@
+@namespace TareasBlazor.Shared
+@using Microsoft.AspNetCore.Components.Routing
+<!--
+    Archivo NavMenu.razor:
+    Define el menú de navegación horizontal.
+    Cada elemento del menú incluye un ícono de cerdito (🐷) y un texto.
+-->
+<nav class="nav-horizontal">
+    <ul>
+        <li>
+            <!-- NavLink resalta el enlace activo -->
+            <NavLink href="/" Match="NavLinkMatch.All">
+                <span class="icono">🐷</span>
+                <span>Eventos</span>
+            </NavLink>
+        </li>
+        <li>
+            <NavLink href="/crear-evento">
+                <span class="icono">🐷</span>
+                <span>Crear Evento</span>
+            </NavLink>
+        </li>
+        <li>
+            <NavLink href="/registro">
+                <span class="icono">🐷</span>
+                <span>Registro</span>
+            </NavLink>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/TareasBlazor/css/cyber.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\cyber.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5327"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Feb 2025 19:19:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/TareasBlazor/css/cyber.ff4onaxx1h.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\cyber.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ff4onaxx1h"},{"Name":"integrity","Value":"sha256-laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk="},{"Name":"label","Value":"_content/TareasBlazor/css/cyber.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5327"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Feb 2025 19:19:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

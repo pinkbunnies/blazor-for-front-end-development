@@ -1,0 +1,32 @@
+@namespace TareasBlazor.Shared
+@inherits LayoutComponentBase
+<!--
+    Archivo MainLayout.razor:
+    Define la estructura base de la aplicación.
+    - Header: contiene el título y el menú horizontal.
+    - Contenedor: área central donde se renderiza el contenido de las páginas.
+    - Footer: muestra el copyright.
+-->
+<div class="wrapper">
+    <!-- Header: incluye el título principal y el menú horizontal -->
+    <header class="header">
+        <!-- Título principal con estilo 3D -->
+        <div class="header-title">
+            <h1>La Mejor Página Cerda del Mundo</h1>
+        </div>
+        <!-- Menú de navegación horizontal -->
+        <NavMenu />
+    </header>
+
+    <!-- Contenedor central donde se inyecta el contenido de la página actual -->
+    <div class="contenedor">
+        <main class="content">
+            @Body  @* Aquí se renderiza el contenido de cada página *@
+        </main>
+    </div>
+
+    <!-- Footer: pie de página con el copyright dinámico -->
+    <footer class="footer">
+        <p>&copy; Esteban M. Cruz Seoane @DateTime.Now.Year</p>
+    </footer>
+</div>

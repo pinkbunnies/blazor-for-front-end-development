@@ -1,0 +1,62 @@
+@page "/registro"
+@using TareasBlazor.Modelos
+@using System.ComponentModel.DataAnnotations
+@inject TareasBlazor.Servicios.SesionUsuarioService ServicioSesion
+@inject TareasBlazor.Servicios.UsuariosService ServicioUsuarios
+<!--
+    Archivo Registro.razor:
+    Página para el registro de usuarios.
+    Valida el formato del correo electrónico y evita registros duplicados.
+-->
+<h1>Registro de Usuario</h1>
+
+<EditForm Model="@usuario" OnValidSubmit="RegistrarUsuario">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <!-- Campo para el nombre del usuario -->
+    <div class="form-group">
+        <label>Nombre:</label>
+        <InputText @bind-Value="usuario.Nombre" class="form-control" />
+    </div>
+    <!-- Campo para el correo electrónico -->
+    <div class="form-group">
+        <label>Correo Electrónico:</label>
+        <InputText @bind-Value="usuario.CorreoElectronico" class="form-control" />
+    </div>
+    <!-- Campo para la contraseña -->
+    <div class="form-group">
+        <label>Contraseña:</label>
+        <InputText @bind-Value="usuario.Contraseña" type="password" class="form-control" />
+    </div>
+    <button type="submit" class="btn">Registrarse</button>
+</EditForm>
+
+@if (!string.IsNullOrEmpty(mensaje))
+{
+    <p>@mensaje</p>
+}
+
+@code {
+    // Modelo de usuario para el registro.
+    private Usuario usuario = new Usuario();
+    // Mensaje para mostrar el resultado del registro.
+    private string mensaje = "";
+
+    // Método que se ejecuta al enviar el formulario de registro.
+    private void RegistrarUsuario()
+    {
+        // Se verifica si el correo ya está registrado.
+        if (ServicioUsuarios.EmailExiste(usuario.CorreoElectronico))
+        {
+            mensaje = "El correo electrónico ya se encuentra registrado.";
+        }
+        else
+        {
+            // Se registra el usuario y se guarda en la sesión.
+            ServicioUsuarios.RegistrarUsuario(usuario);
+            ServicioSesion.UsuarioRegistrado = usuario;
+            mensaje = "Registro exitoso.";
+        }
+    }
+}

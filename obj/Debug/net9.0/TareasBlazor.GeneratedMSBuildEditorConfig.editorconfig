@@ -1,0 +1,61 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TareasBlazor
+build_property.RootNamespace = TareasBlazor
+build_property.ProjectDir = /dotNet/TareasBlazor/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /dotNet/TareasBlazor
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/dotNet/TareasBlazor/Componentes/TarjetaEvento.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50ZXMvVGFyamV0YUV2ZW50by5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/dotNet/TareasBlazor/Pages/App.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/dotNet/TareasBlazor/Pages/CrearEvento.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXJFdmVudG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/dotNet/TareasBlazor/Pages/DetallesEvento.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGV0YWxsZXNFdmVudG8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/dotNet/TareasBlazor/Pages/ListaEventos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGlzdGFFdmVudG9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/dotNet/TareasBlazor/Pages/Registro.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVnaXN0cm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/dotNet/TareasBlazor/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/dotNet/TareasBlazor/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/dotNet/TareasBlazor/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/dotNet/TareasBlazor/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

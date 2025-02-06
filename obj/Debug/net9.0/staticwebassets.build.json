@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "Hash": "Cu2pbX1g1BKZd6ChGqVQB4QkvxzI4c1q2EfRIuesTwo=",
+  "Source": "TareasBlazor",
+  "BasePath": "_content/TareasBlazor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TareasBlazor/wwwroot",
+      "Source": "TareasBlazor",
+      "ContentRoot": "/dotNet/TareasBlazor/wwwroot/",
+      "BasePath": "_content/TareasBlazor",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/dotNet/TareasBlazor/obj/Debug/net9.0/compressed/gvpuvq5f3y-ff4onaxx1h.gz",
+      "SourceId": "TareasBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "/dotNet/TareasBlazor/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/TareasBlazor",
+      "RelativePath": "css/cyber#[.{fingerprint=ff4onaxx1h}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/dotNet/TareasBlazor/wwwroot/css/cyber.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "dp2scztofe",
+      "Integrity": "TzuSxtzCC8/Xgc3CRBHgolmtEHyWChRmAQ6Lm1aBc9g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/dotNet/TareasBlazor/wwwroot/css/cyber.css"
+    },
+    {
+      "Identity": "/dotNet/TareasBlazor/wwwroot/css/cyber.css",
+      "SourceId": "TareasBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "/dotNet/TareasBlazor/wwwroot/",
+      "BasePath": "_content/TareasBlazor",
+      "RelativePath": "css/cyber#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ff4onaxx1h",
+      "Integrity": "laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/cyber.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/cyber.css",
+      "AssetFile": "/dotNet/TareasBlazor/obj/Debug/net9.0/compressed/gvpuvq5f3y-ff4onaxx1h.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000521648409"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1916"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TzuSxtzCC8/Xgc3CRBHgolmtEHyWChRmAQ6Lm1aBc9g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 19:19:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk="
+        }
+      ]
+    },
+    {
+      "Route": "css/cyber.css",
+      "AssetFile": "/dotNet/TareasBlazor/wwwroot/css/cyber.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 19:19:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk="
+        }
+      ]
+    },
+    {
+      "Route": "css/cyber.css.gz",
+      "AssetFile": "/dotNet/TareasBlazor/obj/Debug/net9.0/compressed/gvpuvq5f3y-ff4onaxx1h.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1916"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TzuSxtzCC8/Xgc3CRBHgolmtEHyWChRmAQ6Lm1aBc9g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 19:19:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TzuSxtzCC8/Xgc3CRBHgolmtEHyWChRmAQ6Lm1aBc9g="
+        }
+      ]
+    },
+    {
+      "Route": "css/cyber.ff4onaxx1h.css",
+      "AssetFile": "/dotNet/TareasBlazor/obj/Debug/net9.0/compressed/gvpuvq5f3y-ff4onaxx1h.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000521648409"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1916"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TzuSxtzCC8/Xgc3CRBHgolmtEHyWChRmAQ6Lm1aBc9g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 19:19:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ff4onaxx1h"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cyber.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk="
+        }
+      ]
+    },
+    {
+      "Route": "css/cyber.ff4onaxx1h.css",
+      "AssetFile": "/dotNet/TareasBlazor/wwwroot/css/cyber.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 19:19:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ff4onaxx1h"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cyber.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-laSathZx/Urbyyfy6sIWQCRRBwm8oo8sF8bUZU3BKqk="
+        }
+      ]
+    },
+    {
+      "Route": "css/cyber.ff4onaxx1h.css.gz",
+      "AssetFile": "/dotNet/TareasBlazor/obj/Debug/net9.0/compressed/gvpuvq5f3y-ff4onaxx1h.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1916"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TzuSxtzCC8/Xgc3CRBHgolmtEHyWChRmAQ6Lm1aBc9g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 19:19:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ff4onaxx1h"
+        },
+        {
+          "Name": "label",
+          "Value": "css/cyber.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TzuSxtzCC8/Xgc3CRBHgolmtEHyWChRmAQ6Lm1aBc9g="
+        }
+      ]
+    }
+  ]
+}

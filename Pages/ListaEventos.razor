@@ -1,0 +1,25 @@
+@page "/"
+@using TareasBlazor.Modelos
+@using TareasBlazor.Componentes
+@inject TareasBlazor.Servicios.EventosService ServicioEventos
+
+<h1>Lista de Eventos</h1>
+
+<!-- Contenedor que utiliza CSS Grid para organizar las tarjetas de evento -->
+<div class="grid-eventos">
+    @foreach (var evento in Eventos)
+    {
+        <TarjetaEvento Evento="@evento" />
+    }
+</div>
+
+@code {
+    // Lista de eventos obtenida desde el servicio
+    private IEnumerable<Evento> Eventos = new List<Evento>();
+
+    // En la inicialización se cargan los eventos en memoria
+    protected override void OnInitialized()
+    {
+        Eventos = ServicioEventos.ObtenerEventos();
+    }
+}
